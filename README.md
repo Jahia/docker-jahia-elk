@@ -14,6 +14,7 @@ These patterns have only been tested on Tomcat 8.
 * Access `http://localhost:5601`
 * Go to Management > Saved objects > Import and pick export_0.8.json <GitRepo>/kibana/export_0.8.json. Click yes for all questions.
 * Go to Dashboard > Jahia or Dashboard > Jahia issues
+* Pick the time range you want to analyze (top right corner)
 
 ## Options
 * Persist Elasticsearch's index upon Docker image restart: `-v <Local_path_to_index>:/var/lib/elasticsearch`
