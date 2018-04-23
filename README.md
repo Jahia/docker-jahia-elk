@@ -1,6 +1,6 @@
 # docker-jahia-elk
 
-This repository features default ELK and filebeat configuration that can be used to monitore Jahia Digital Experience 7+ logs. It contains Logstash patterns as well as Kibana dashboards.
+This repository features the full Elasticsearch-Logstash-Kibana stack inside a Docker image, with pre-packaged configuration that can be used to monitore Jahia Digital Experience 7+ logs. It contains Logstash patterns as well as Kibana dashboards.
 
 This Docker image can be used to index logs generated on the fly on a running Jahia DX platform, or to analyze logs on a static folder.
 
