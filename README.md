@@ -1,4 +1,4 @@
-# logstash-config
+# docker-jahia-elk
 
 This repository features default ELK and filebeat configuration that can be used to monitore Jahia Digital Experience 7+ logs. It contains Logstash patterns as well as Kibana dashboards.
 
