@@ -1,6 +1,6 @@
 TOMCAT_TIMESTAMP ([0-9-]+ [0-9:]+,[0-9]+)
-BASE_CATALINA_OUT %{TOMCAT_TIMESTAMP:timestamp_log}: (?<loglevel>[A-Za-z$_]+)%{SPACE}\[(?<javaClass>[a-zA-Z\-0-9]+)\] -
-BASE_JAHIA_LOG %{TOMCAT_TIMESTAMP:timestamp_log}: (?<loglevel>[A-Za-z$_]+)%{SPACE}\[(?<threadName>[a-zA-Z0-9_-]+)\] (?<className>[a-zA-Z0-9\.]+):
+BASE_CATALINA_OUT %{TOMCAT_TIMESTAMP:timestamp_log}: (?<loglevel>[A-Za-z$_]+)%{SPACE}\[(?<javaClass>[a-zA-Z\$\-0-9]+)\] -
+BASE_JAHIA_LOG %{TOMCAT_TIMESTAMP:timestamp_log}: (?<loglevel>[A-Za-z$_]+)%{SPACE}\[(?<threadName>[a-zA-Z0-9_-]+)\] (?<className>[a-zA-Z0-9\.\$]+):
 JAHIA_PAGE_RENDERED %{WORD} \[%{URIPATH:pagePath}\] user=\[%{WORD:username}\] .* in \[%{INT:renderTime:int}ms\]
 #BASE_LOGFILE (?:%{BASE_CATALINA_OUT}|%{BASE_JAHIA_LOG})
 BASE_LOGFILE %{BASE_JAHIA_LOG}
