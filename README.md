@@ -12,7 +12,7 @@ These patterns have only been tested on Tomcat 8.
 * Build: `docker build -t jahia/elk:0.12 .`
 * Run: `sudo docker run -p 5601:5601 --rm -v <LOCAL_PATH_TO_LOG_FOLDER>:/var/logs/logstash_logs -e MAX_MAP_COUNT=262144 -it --name jahia-elk jahia/elk:0.12`
 * Access `http://localhost:5601`
-* Go to Management > Saved objects > Import and pick export_0.8.json <GitRepo>/kibana/export_0.8.json. Click yes for all questions.
+* Go to Management > Saved objects > Import and pick export_0.8.json <GitRepo>/kibana/jahia_dashboards.json. Click yes for all questions.
 * Go to Dashboard > Jahia or Dashboard > Jahia issues
 * Pick the time range you want to analyze (top right corner)
 
