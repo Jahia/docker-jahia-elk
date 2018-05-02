@@ -4,7 +4,10 @@ This repository features the full Elasticsearch-Logstash-Kibana stack inside a D
 
 This Docker image can be used to index logs generated on the fly on a running Jahia DX platform, or to analyze logs on a static folder.
 
-These patterns have only been tested on Tomcat 8.
+![Number of page view per day](./images/render-count.png)
+![Various statistics](.images/ratios.png)
+![Most frequent errors](./images/errors.png)
+
 
 ## How to use this Dockerfile
 * Clone: `git clone https://github.com/Jahia/docker-jahia-elk.git`
