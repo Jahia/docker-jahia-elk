@@ -8,6 +8,8 @@ This Docker image can be used to index logs generated on the fly on a running Ja
 ![Various statistics](./images/ratios.png)
 ![Most frequent errors](./images/errors.png)
 
+All logstash patterns and kibana dashboards come from the following Github repository: https://github.com/Jahia/jahia-logstash-kibana-config
+All logstash/kibana related pull requests need to be sent against the jahia-logstash-kibana-config repo.
 
 ## How to use this Dockerfile
 * Clone: `git clone https://github.com/Jahia/docker-jahia-elk.git`
