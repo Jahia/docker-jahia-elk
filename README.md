@@ -16,6 +16,8 @@ These patterns have only been tested on Tomcat 8.
 * Go to Dashboard > Jahia or Dashboard > Jahia issues
 * Pick the time range you want to analyze (top right corner)
 
+When finished with the Docker image, run the `docker stop jahia-elk` to stop it.
+
 ## Options
 * Persist Elasticsearch's index upon Docker image restart: `-v <Local_path_to_index>:/var/lib/elasticsearch`
 The local path to index must point to an empty folder.
