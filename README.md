@@ -5,7 +5,7 @@ This repository features the full Elasticsearch-Logstash-Kibana stack inside a D
 This Docker image can be used to index logs generated on the fly on a running Jahia DX platform, or to analyze logs on a static folder.
 
 ![Number of page view per day](./images/render-count.png)
-![Various statistics](.images/ratios.png)
+![Various statistics](./images/ratios.png)
 ![Most frequent errors](./images/errors.png)
 
 
