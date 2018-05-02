@@ -13,7 +13,7 @@ This Docker image can be used to index logs generated on the fly on a running Ja
 * Clone: `git clone https://github.com/Jahia/docker-jahia-elk.git`
 * Access folder: `cd docker-jahia-elk`
 * Build: `docker build -t jahia/elk:0.12 .`
-* Run: `sudo docker run -p 5601:5601 --rm -v <LOCAL_PATH_TO_LOG_FOLDER>:/var/logs/logstash_logs -e MAX_MAP_COUNT=262144 -it --name jahia-elk jahia/elk:0.12`
+* Run: `sudo docker run -p 5601:5601 --rm -v <LOCAL_PATH_TO_LOG_FOLDER>:/var/logs/logstash_logs -e MAX_MAP_COUNT=262144 -it --name jahia-elk jahia/elk:0.12` (The `LOCAL_PATH_TO_LOG_FOLDER` folder needs to contain a least one file matching the pattern \*jahia.log\*)
 * Access `http://localhost:5601`
 * Go to Management > Saved objects > Import and pick export_0.8.json <GitRepo>/kibana/jahia_dashboards.json. Click yes for all questions.
 * Go to Dashboard > Jahia or Dashboard > Jahia issues
