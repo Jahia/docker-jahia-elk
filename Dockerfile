@@ -8,13 +8,11 @@ RUN git clone https://github.com/Jahia/jahia-logstash-kibana-config
 
 RUN ln -s /jahia-logstash-kibana-config/logstash/jahialog.conf /etc/logstash/conf.d/09_jahialog.conf
 RUN ln -s /jahia-logstash-kibana-config/logstash/local_jahia.conf /etc/logstash/conf.d/01_local_jahia.conf
-
 RUN ln -s /jahia-logstash-kibana-config/logstash/patterns/jahia /opt/logstash/patterns/jahia
 
-
+### In case you want to use local logstash configuration file, use the following lines:
 #ADD ./local_jahia.conf /etc/logstash/conf.d/01_local_jahia.conf
 #ADD ./jahialog.conf /etc/logstash/conf.d/09_jahialog.conf
-
 #ADD ./patterns/jahia /opt/logstash/patterns/jahia
 
 
