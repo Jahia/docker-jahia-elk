@@ -27,6 +27,7 @@ When finished with the Docker image, run the `docker stop jahia-elk` to stop it.
 ## Options
 * Persist Elasticsearch's index upon Docker image restart: `-v <Local_path_to_index>:/var/lib/elasticsearch`
 The local path to the index must point to an empty folder.
+* The `--no-cache` docker build parameter is necessary to bypass Docker's cache and get the latest commit from the jahia-logstash-kibana-config Github repo.
 
 ## Features:
  * Jahia page rendering monitoring (render time, paths, users, errors)
