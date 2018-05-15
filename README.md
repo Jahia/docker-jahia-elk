@@ -18,7 +18,7 @@ All logstash/kibana related pull requests need to be sent against the jahia-logs
 * Build: `docker build -t jahia/elk:0.12 .`
 * Run: `sudo docker run -p 5601:5601 --rm -v <LOCAL_PATH_TO_LOG_FOLDER>:/var/logs/logstash_logs -e MAX_MAP_COUNT=262144 -it --name jahia-elk jahia/elk:0.12` (The `LOCAL_PATH_TO_LOG_FOLDER` folder needs to contain a least one file matching the pattern \*jahia.log\*)
 * Access `http://localhost:5601`
-* Go to Management > Saved objects > Import and pick jahia-dashboards.json <GitRepo>/kibana/jahia_dashboards.json. Click yes for all questions.
+* Go to `Management` > `Saved objects` > `Import` and pick <GitRepo>/kibana/jahia-dashboards.json. Click yes for all the questions.
 * Go to Dashboard > Jahia or Dashboard > Jahia issues
 * Pick the time range you want to analyze (top right corner)
 
